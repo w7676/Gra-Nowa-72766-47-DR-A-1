@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/ScenaGlowna.unity
+    guid: dd6cb19f64da665449edad0a0e031dac
+  - enabled: 1
+    path: Assets/Scenes/Scena1.unity
+    guid: 5ba87d89853ed114ca41f11b77b521a1
   m_configObjects: {}

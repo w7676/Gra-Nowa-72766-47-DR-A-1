@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{12ea1d28-0036-bf76-a411-5cee70b06df0}</ProjectGuid>
+    <ProjectGuid>{0b52dc23-abcc-e90d-51e4-35cc2f977f4e}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor-firstpass</AssemblyName>
@@ -238,7 +238,7 @@
         <HintPath>D:/UNITY/2019.4.14f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>D:/NOWE REPO/47-DR-A-172766Gra_Nowa/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+        <HintPath>D:/NOWE REPO/Gra-Nowa-72766-47-DR-A-1/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>D:/UNITY/2019.4.14f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -595,42 +595,42 @@
         <HintPath>D:/UNITY/2019.4.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-        <HintPath>D:/NOWE REPO/47-DR-A-172766Gra_Nowa/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+        <HintPath>D:/NOWE REPO/Gra-Nowa-72766-47-DR-A-1/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-        <HintPath>D:/NOWE REPO/47-DR-A-172766Gra_Nowa/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+        <HintPath>D:/NOWE REPO/Gra-Nowa-72766-47-DR-A-1/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>D:/NOWE REPO/47-DR-A-172766Gra_Nowa/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>D:/NOWE REPO/Gra-Nowa-72766-47-DR-A-1/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>D:/NOWE REPO/47-DR-A-172766Gra_Nowa/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>D:/NOWE REPO/Gra-Nowa-72766-47-DR-A-1/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>D:/NOWE REPO/47-DR-A-172766Gra_Nowa/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>D:/NOWE REPO/Gra-Nowa-72766-47-DR-A-1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>D:/NOWE REPO/47-DR-A-172766Gra_Nowa/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>D:/NOWE REPO/Gra-Nowa-72766-47-DR-A-1/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>D:/NOWE REPO/47-DR-A-172766Gra_Nowa/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>D:/NOWE REPO/Gra-Nowa-72766-47-DR-A-1/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-        <HintPath>D:/NOWE REPO/47-DR-A-172766Gra_Nowa/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+        <HintPath>D:/NOWE REPO/Gra-Nowa-72766-47-DR-A-1/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>D:/NOWE REPO/47-DR-A-172766Gra_Nowa/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>D:/NOWE REPO/Gra-Nowa-72766-47-DR-A-1/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>D:/NOWE REPO/47-DR-A-172766Gra_Nowa/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>D:/NOWE REPO/Gra-Nowa-72766-47-DR-A-1/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>D:/NOWE REPO/47-DR-A-172766Gra_Nowa/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>D:/NOWE REPO/Gra-Nowa-72766-47-DR-A-1/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{e7e3f5ac-7934-1e5a-3059-ab75c34b466f}</Project>
+      <Project>{1d51278a-b37f-f4b2-9fc6-eca6b77c3095}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>

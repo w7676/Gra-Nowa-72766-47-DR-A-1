@@ -44,10 +44,9 @@
      <Compile Include="Assets\Scripts\DobreAI.cs" />
      <Compile Include="Assets\Scripts\EneObrazenia.cs" />
      <Compile Include="Assets\Scripts\EneZdrowie.cs" />
+     <Compile Include="Assets\Scripts\GraczInstancja.cs" />
      <Compile Include="Assets\Scripts\HideCursor.cs" />
-     <Compile Include="Assets\Scripts\LoadNewLevel.cs" />
      <Compile Include="Assets\Scripts\MenuUI.cs" />
-     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\Obrazenia.cs" />
      <Compile Include="Assets\Scripts\PickUpItem.cs" />
      <Compile Include="Assets\Scripts\PlayerControler.cs" />

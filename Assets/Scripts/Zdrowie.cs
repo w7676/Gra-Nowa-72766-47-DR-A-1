@@ -32,6 +32,12 @@ public class Zdrowie : MonoBehaviour {
 		return false;
 	}
 
+	public void setZdrowie(float zdrowie){
+		if(zdrowie <=0){
+			zdrowie+=10;
+		}
+	}
+	
 	void Start()
     {
         zdrowie = 100.0f;
@@ -43,7 +49,7 @@ public class Zdrowie : MonoBehaviour {
     {
 		if(zdrowie < maxZdrowie)
 		{
-			zdrowie ++;
+			zdrowie= zdrowie +1*1.0f;
 		}
         
     }

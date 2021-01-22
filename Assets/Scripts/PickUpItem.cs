@@ -25,6 +25,10 @@ public class PickUpItem : MonoBehaviour
     {
         AudioSource.PlayClipAtPoint(pickupClip, transform.position);
         counter.points += 1;
+        if(counter.IsNewRecord())
+        {
+            counter.UpdateRecord();
+        }
         counter.counterText.text = counter.points.ToString();
         Destroy(this.gameObject);
     }

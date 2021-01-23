@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class PickUpItem : MonoBehaviour
 {
-
+    
     public AudioClip pickupClip;
     public PointsCounter counter;
     // Start is called before the first frame update

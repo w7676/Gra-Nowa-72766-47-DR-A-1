@@ -6,7 +6,7 @@ using System.Collections;
 * 
 * 
  */
-public class PlayerControler : Base {
+public class PlayerControler : MonoBehaviour {
 
 	//Obiekt odpowiedzialny za ruch gracza.
 	public CharacterController characterControler;
@@ -26,6 +26,24 @@ public class PlayerControler : Base {
 	//Zakres patrzenia w górę i dół.
 	public float zakresMyszyGoraDol = 90.0f;
 
+	/** Menu główne.*/
+	public GameObject menu;
+
+	/** 
+	 * Pobranie prędkości poruszania się przód/tył.
+	 * jeżeli wartość dodatnia to poruszamy się do przodu,
+	 * jeżeli wartość ujemna to poruszamy się do tyłu.
+	 */
+	private float rochPrzodTyl;
+	/** 
+	 * Pobranie prędkości poruszania się lewo/prawo.
+	 * jeżeli wartość dodatnia to poruszamy się w prawo,
+	 * jeżeli wartość ujemna to poruszamy się w lewo.
+	 */
+	private float rochLewoPrawo;
+	/** Zmienna dostarcza informację o tym czy gracz bienie.*/
+	private bool czyBiegnie;
+
 	// Use this for initialization
 	void Start () {
 		characterControler = GetComponent<CharacterController>();
@@ -43,14 +61,9 @@ public class PlayerControler : Base {
 	 * Metoda odpowiedzialna za poruszanie się na klawiaturze.
 	 */
 	private void klawiatura(){
-		//Pobranie prędkości poruszania się przód/tył.
-		// jeżeli wartość dodatnia to poruszamy się do przodu,
-		// jeżeli wartość ujemna to poruszamy się do tyłu.
-		float rochPrzodTyl = Input.GetAxis("Vertical") * predkoscPoruszania;
-		//Pobranie prędkości poruszania się lewo/prawo.
-		// jeżeli wartość dodatnia to poruszamy się w prawo,
-		// jeżeli wartość ujemna to poruszamy się w lewo.
-		float rochLewoPrawo = Input.GetAxis("Horizontal") * predkoscPoruszania;
+
+		rochPrzodTyl = Input.GetAxis("Vertical") * predkoscPoruszania;
+		rochLewoPrawo = Input.GetAxis("Horizontal") * predkoscPoruszania;
 		//Debug.Log (rochLewoPrawo);
 		
 		//Skakanie
@@ -62,13 +75,13 @@ public class PlayerControler : Base {
 			aktualnaWysokoscSkoku += Physics.gravity.y * Time.deltaTime;
 		}
 		
-		//Debug.Log (Physics.gravity.y);
-		
 		//Bieganie
 		if(Input.GetKeyDown("left shift")) {
 			predkoscPoruszania+=predkoscBiegania;
+			czyBiegnie = true;
 		} else if(Input.GetKeyUp("left shift")) {
 			predkoscPoruszania-=predkoscBiegania;
+			czyBiegnie = false;
 		}
 		
 		//Tworzymy wektor odpowiedzialny za ruch.
@@ -78,8 +91,9 @@ public class PlayerControler : Base {
 		Vector3 ruch = new Vector3(rochLewoPrawo, aktualnaWysokoscSkoku, rochPrzodTyl);
 		//Aktualny obrót gracza razy kierunek w którym sie poruszamy (poprawka na obrót myszką abyśmy szli w kierunku w którym patrzymy).
 		ruch = transform.rotation * ruch;
-		
+
 		characterControler.Move(ruch * Time.deltaTime);
+
 	}
 
 	/**
@@ -116,4 +130,35 @@ public class PlayerControler : Base {
 		return false;
 	}
 
+	/**
+	 * Czy główne menu jest właczone.
+	 */
+	public bool isMenuOn(){
+		if (menu != null) {
+			Canvas manuUI = menu.GetComponent<Canvas> ();
+			if (manuUI != null) {
+				return manuUI.enabled;
+			}
+		}
+		return false;
+	}
+
+	/**
+	 * Funkcja udostępnia informację o tym czy gracz wykonuje ruch (chodzi).
+	 * Jeżeli gracz chodzi to zwraca 'true' jeżeli nie to 'false'.
+	 */
+	public bool czyGraczChodzi(){
+		if (rochPrzodTyl != 0 || rochLewoPrawo != 0) {
+			return true;
+		}
+		return false;
+	}
+
+	/**
+	 * Funkcja dostarcza informacje o tym czy gracz biegnie.
+	 * Zwraca 'true' jeżelli gracz biegnie w przeciwnym razie 'false'.
+	 */
+	public bool czyGraczBiegnie(){
+		return czyBiegnie;
+	}
 }

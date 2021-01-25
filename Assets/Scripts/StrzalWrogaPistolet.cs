@@ -5,9 +5,7 @@ using System.Collections;
  * Klasa odpowiedzialna za oddanie strzalu z broni palnej.
  * 
  * 
- * @author Hubert Paluch.
- * MViRe - na potrzeby kursu UNITY3D v5.
- * mvire.com 
+ * 
  */
 public class StrzalWrogaPistolet : StrzalWroga {
 
@@ -20,6 +18,11 @@ public class StrzalWrogaPistolet : StrzalWroga {
 
 	//Obrarzenie jakie zadaje strzal (ile punktow zdrowia zabiera).
 	public float obrazenia = 20.0f;
+
+	/** Źródło dzwięki.*/
+	public AudioSource zrodloDzwieku;
+	/** Dzwięk skoku.*/
+	public AudioClip odglosStrzalu;
 
 
 	public void strzal () {
@@ -39,8 +42,7 @@ public class StrzalWrogaPistolet : StrzalWroga {
 			Zdrowie zdrowie = (Zdrowie) graczObiekt.GetComponent<Zdrowie>();
 			if(zdrowie != null && !zdrowie.czyMartwy()) { 
 				zdrowie.otrzymaneObrazenia(obrazenia);
-
-
+				zrodloDzwieku.PlayOneShot(odglosStrzalu);
 			}
 
 		}

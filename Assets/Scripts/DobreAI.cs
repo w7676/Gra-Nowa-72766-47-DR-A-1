@@ -28,6 +28,16 @@ public class DobreAI : MonoBehaviour {
 	private bool patrzNaGracza = false;
 	private Vector3 pozycjaGraczaXYZ; 
 
+	/** Dostarcza informację o tym czy wróg się porusza.*/
+	private bool czySiePorusza;
+
+	/** Źródło dzwięki.*/
+	public AudioSource zrodloDzwieku;
+	/** Dzwięk chodzenia.*/
+	public AudioClip chodzenie;
+	public float odliczanieDoKroku = 0f;
+	public float czasKroku = 0.5f;
+
 	/**Skrypt ataku.*/
 	private PrzeciwnikAtak atak;
 
@@ -51,6 +61,7 @@ public class DobreAI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (!czyGraczMartwy ()) {//Jężeli gracz ciągle żyje to wykonuj animacje ruchu.
+			dzwiekChodzenia();
 			ruchWroga();
 		}
 	}
@@ -69,6 +80,7 @@ public class DobreAI : MonoBehaviour {
 		
 		//Sprawdzenie czy gracz jest w zasięgu wzroku wroga.
 		if (dist <= zasiegWzroku && dist > odstepOdGracza && !isDead ()) {
+			czySiePorusza = true;
 			patrzNaGracza = true;//Gracz w zasiegu wzroku wiec na neigo patrzymy
 			
 			//Teraz wykonujemy ruch wroga.
@@ -82,12 +94,14 @@ public class DobreAI : MonoBehaviour {
 		} else if (dist <= odstepOdGracza && !isDead ()) { //Jeżeli wróg jest tuż przy graczu to niech ciągle na niego patrzy mimo że nie musi się już poruszać.
 			patrzNaGracza = true;
 			atak.wykonajAtak ();
+			czySiePorusza = false;
 		}
 		
 		//Jeżeli obiekt jeszcze ma punkty zdrowia to na nas patrzy, podąża za nami.
 		if (!isDead ()) {
 			obrotWStroneGracza ();
 		} else {//Obiekt nieżyje.
+			czySiePorusza = false;
 			if (GetComponent<Rigidbody> ()) {
 				GetComponent<Rigidbody> ().freezeRotation = false;
 			}
@@ -145,7 +159,7 @@ public class DobreAI : MonoBehaviour {
 	 * Funkcja zwraca informację o tym czy obiekt jeszcze posiada punkty zdrowia.
 	 */
 	bool isDead(){
-		EneZdrowie h = gameObject.GetComponent<EneZdrowie>();
+		Zdrowie h = gameObject.GetComponent<Zdrowie>();
 		if(h != null) {
 			return h.czyMartwy();
 		}
@@ -167,5 +181,22 @@ public class DobreAI : MonoBehaviour {
 	/**Funkcja zwraca zasięg wzroku przeciwnik.*/
 	public float getZasiegWzroku(){
 		return zasiegWzroku;
+	}
+
+	/**
+	 * Metoda odpowiedzialna za oddtwarzanie dzwięku chodzenia gracza.
+	 */
+	private void dzwiekChodzenia(){
+		//Zmniejszanie licznika do kolejnego odtworzenia dźwięku.
+		if (odliczanieDoKroku > 0) {
+				odliczanieDoKroku -= Time.deltaTime;
+		}
+		//Jeżeli gracz się porusza to odgrywaj dzwięk poruszania.
+		if (czySiePorusza && odliczanieDoKroku <= 0) {
+
+			odliczanieDoKroku = czasKroku;
+			zrodloDzwieku.PlayOneShot (chodzenie);
+		}				
+		
 	}
 }

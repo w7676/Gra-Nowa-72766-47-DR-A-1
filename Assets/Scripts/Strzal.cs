@@ -9,6 +9,9 @@ public class Strzal : MonoBehaviour {
 	public float czekaj = 2f;
 	//Odliczanie do kolejnego strzalu.
 	public float odliczanieDoStrzalu = 0f;
+	public AudioSource zrodloDzwieku;
+	/** Dzwięk strzału.*/
+	public AudioClip odglosStrzalu;
 	
 	//Obiekt pocisku.
 	public GameObject pociskPrefab;
@@ -66,6 +69,9 @@ public class Strzal : MonoBehaviour {
 					Instantiate(pociskPrefab, hitPoint, Quaternion.identity);
 
 				}
+				 if(zrodloDzwieku != null) {//Na wszelki wypadek jak by nie zostało podpięte źródło dzwięku.
+				zrodloDzwieku.PlayOneShot(odglosStrzalu);
+			}
 				
 			}
 		}

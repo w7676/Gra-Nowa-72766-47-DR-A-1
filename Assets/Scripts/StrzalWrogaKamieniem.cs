@@ -5,9 +5,7 @@ using System.Collections;
  * Klasa odpowiedzialna za oddanie strzału przez wroga.
  * Strzał/rzut kamieniem.
  * 
- * @author Hubert Paluch.
- * MViRe - na potrzeby kursu UNITY3D v5.
- * mvire.com 
+ * 
  */
 public class StrzalWrogaKamieniem : StrzalWroga {
 
@@ -19,6 +17,11 @@ public class StrzalWrogaKamieniem : StrzalWroga {
 	//Obiekt kamienia.
 	public GameObject kamienPrefab;
 	public float predkosc = 50;
+
+	/** Źródło dzwięki.*/
+	public AudioSource zrodloDzwieku;
+	/** Dzwięk skoku.*/
+	public AudioClip odglosStrzalu;
 
 	/**
 	 * Metoda wykonująca strzał.
@@ -38,7 +41,9 @@ public class StrzalWrogaKamieniem : StrzalWroga {
 			//Wprawienie pocisku w ruch za pomocą oddziaływania na niego siłą (na Rigidbody).
 			kamien.GetComponent<Rigidbody>().AddForce(transform.forward * predkosc, ForceMode.Impulse);
 
+			zrodloDzwieku.PlayOneShot(odglosStrzalu);
 		}
 	
 	}
 }
+

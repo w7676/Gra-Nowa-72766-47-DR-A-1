@@ -42,6 +42,8 @@
      <Compile Include="Assets\Scripts\Celownik.cs" />
      <Compile Include="Assets\Scripts\CrosshairTextu2D.cs" />
      <Compile Include="Assets\Scripts\DobreAI.cs" />
+     <Compile Include="Assets\Scripts\DoorController.cs" />
+     <Compile Include="Assets\Scripts\DoorController2.cs" />
      <Compile Include="Assets\Scripts\DzwiekiGracza.cs" />
      <Compile Include="Assets\Scripts\EneObrazenia.cs" />
      <Compile Include="Assets\Scripts\EneZdrowie.cs" />
@@ -66,6 +68,7 @@
      <Compile Include="Assets\Scripts\StrzalWrogaPistolet.cs" />
      <Compile Include="Assets\Scripts\StrzalWrogaRakieta.cs" />
      <Compile Include="Assets\Scripts\StrzalZPociskiem.cs" />
+     <Compile Include="Assets\Scripts\SwitchDoor.cs" />
      <Compile Include="Assets\Scripts\TriggerSwiatlo.cs" />
      <Compile Include="Assets\Scripts\WallDestroy.cs" />
      <Compile Include="Assets\Scripts\Zdrowie.cs" />

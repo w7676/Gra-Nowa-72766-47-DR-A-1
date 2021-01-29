@@ -5,6 +5,8 @@ using UnityEngine;
 public class TriggerSwiatlo : MonoBehaviour
 {
     public GameObject light;
+    
+     
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +22,7 @@ public class TriggerSwiatlo : MonoBehaviour
     void OnTriggerEnter(Collider col)
     {
         light.SetActive(true);
+        
+        
     }
 }

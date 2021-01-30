@@ -229,6 +229,10 @@ MonoBehaviour:
   predkoscRuchu: 6
   zasiegWzroku: 40
   odstepOdGracza: 2
+  zrodloDzwieku: {fileID: 0}
+  chodzenie: {fileID: 0}
+  odliczanieDoKroku: 0
+  czasKroku: 0.5
 --- !u!114 &1455847472280625985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,6 +250,8 @@ MonoBehaviour:
   kamienPrefab: {fileID: 2651155302279481859, guid: 09958336b6844c945bf686490ecdbb5b,
     type: 3}
   predkosc: 50
+  zrodloDzwieku: {fileID: 0}
+  odglosStrzalu: {fileID: 0}
 --- !u!114 &1455847472280625984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,7 +285,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048321958198027730}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e065baf4190fc14479a83ae82f420685, type: 3}
   m_Name: 
@@ -289,6 +295,8 @@ MonoBehaviour:
   czekaj: 0.5
   odliczanieDoStrzalu: 0
   obrazenia: 20
+  zrodloDzwieku: {fileID: 0}
+  odglosStrzalu: {fileID: 0}
 --- !u!114 &6574582182720698232
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class PointsCounter : MonoBehaviour
     public Text counterText;
     void Start()
     {
+       points=0;
         record=PlayerPrefs.GetInt("record");
         recordText.text=record.ToString();
     }
@@ -37,10 +38,10 @@ public class PointsCounter : MonoBehaviour
          PlayerPrefs.DeleteKey("record");
 
     }
-    public int wyslij(int a)
+   /* public int wyslij(int a)
     {
         int b;
         b= points;
         return b;
-    }
+    }*/
 }

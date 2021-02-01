@@ -46,6 +46,12 @@ public class EneZdrowie : MonoBehaviour {
 		}
 		return false;
 	}
+	void Start()
+    {
+        zdrowie = 100;
+		maxZdrowie=100;
+    }
+
 
 }
 	

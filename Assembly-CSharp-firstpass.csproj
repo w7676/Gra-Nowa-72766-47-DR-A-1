@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1d51278a-b37f-f4b2-9fc6-eca6b77c3095}</ProjectGuid>
+    <ProjectGuid>{aeebc7ee-c5dd-c10a-5165-e3c0ef1e4637}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
@@ -693,31 +693,31 @@
         <HintPath>D:/UNITY/2019.4.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>D:/NOWE REPO/Gra-Nowa-72766-47-DR-A-1/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>D:/GIT Nowy/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>D:/NOWE REPO/Gra-Nowa-72766-47-DR-A-1/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>D:/GIT Nowy/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>D:/NOWE REPO/Gra-Nowa-72766-47-DR-A-1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>D:/GIT Nowy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>D:/NOWE REPO/Gra-Nowa-72766-47-DR-A-1/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>D:/GIT Nowy/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>D:/NOWE REPO/Gra-Nowa-72766-47-DR-A-1/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>D:/GIT Nowy/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-        <HintPath>D:/NOWE REPO/Gra-Nowa-72766-47-DR-A-1/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+        <HintPath>D:/GIT Nowy/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>D:/NOWE REPO/Gra-Nowa-72766-47-DR-A-1/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>D:/GIT Nowy/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>D:/NOWE REPO/Gra-Nowa-72766-47-DR-A-1/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>D:/GIT Nowy/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>D:/NOWE REPO/Gra-Nowa-72766-47-DR-A-1/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>D:/GIT Nowy/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

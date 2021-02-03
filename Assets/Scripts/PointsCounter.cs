@@ -16,7 +16,8 @@ public class PointsCounter : MonoBehaviour
         recordText.text=record.ToString();
     }
 
-   
+    
+
 
     public bool IsNewRecord()
     {

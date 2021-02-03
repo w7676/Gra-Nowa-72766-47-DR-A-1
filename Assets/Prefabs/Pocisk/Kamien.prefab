@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b365a0f066067204198bfa9fea46ab54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obrazenia: 20
+  obrazenia: 30
 --- !u!54 &6291127179153197559
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -151,4 +151,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d00a7b6a440a4c448d614da4bd610b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obrazenia: 10
+  obrazenia: 25

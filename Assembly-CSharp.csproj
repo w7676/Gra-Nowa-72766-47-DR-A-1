@@ -36,7 +36,6 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scenes\AllSkyFree\AllSkyFree_Menu.cs" />
      <Compile Include="Assets\Scripts\Base.cs" />
      <Compile Include="Assets\Scripts\BoxDestroy.cs" />
      <Compile Include="Assets\Scripts\Celownik.cs" />
@@ -72,7 +71,7 @@
      <Compile Include="Assets\Scripts\TriggerSwiatlo.cs" />
      <Compile Include="Assets\Scripts\WallDestroy.cs" />
      <Compile Include="Assets\Scripts\Zdrowie.cs" />
-     <None Include="Assets\Scenes\AllSkyFree\AllSkyFree_Readme.txt" />
+     <None Include="Assets\Fantasy Skybox FREE\Readme.txt" />
     <Reference Include="UnityEngine">
         <HintPath>D:/UNITY/2019.4.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

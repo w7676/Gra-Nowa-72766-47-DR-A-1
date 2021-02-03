@@ -296,7 +296,7 @@ MonoBehaviour:
   zasiegWzroku: 40
   odstepOdGracza: 2
   zrodloDzwieku: {fileID: -85576219752783262}
-  chodzenie: {fileID: 8300000, guid: c1397457c0a15e441b1cfccc8033c8a8, type: 3}
+  chodzenie: {fileID: 8300000, guid: 790888481cf84c2479301d44b7aba968, type: 3}
   odliczanieDoKroku: 0
   czasKroku: 0.5
 --- !u!114 &5006033212110244523
@@ -316,8 +316,8 @@ MonoBehaviour:
   kamienPrefab: {fileID: 2651155302279481859, guid: 09958336b6844c945bf686490ecdbb5b,
     type: 3}
   predkosc: 50
-  zrodloDzwieku: {fileID: 9077774742278634706}
-  odglosStrzalu: {fileID: 8300000, guid: 50e6a0b158ff6a744970cca29b32f178, type: 3}
+  zrodloDzwieku: {fileID: -85576219752783262}
+  odglosStrzalu: {fileID: 8300000, guid: 7ad47891bd9fb9240835e031e4f9638a, type: 3}
 --- !u!114 &5006033212110244522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,16 +389,16 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_Volume: 0.17
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 15
+  MaxDistance: 10
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0

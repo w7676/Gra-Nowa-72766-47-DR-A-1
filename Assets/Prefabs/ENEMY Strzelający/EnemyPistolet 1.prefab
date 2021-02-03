@@ -295,7 +295,7 @@ MonoBehaviour:
   zasiegWzroku: 40
   odstepOdGracza: 2
   zrodloDzwieku: {fileID: -85576219752783262}
-  chodzenie: {fileID: 8300000, guid: c1397457c0a15e441b1cfccc8033c8a8, type: 3}
+  chodzenie: {fileID: 8300000, guid: 19dc8a6882d806e40b65d433971cba5a, type: 3}
   odliczanieDoKroku: 0
   czasKroku: 0.5
 --- !u!114 &5006033212110244522
@@ -341,8 +341,8 @@ MonoBehaviour:
   czekaj: 0.5
   odliczanieDoStrzalu: 0
   obrazenia: 20
-  zrodloDzwieku: {fileID: 9077774742278634706}
-  odglosStrzalu: {fileID: 8300000, guid: 2952997e48f50de43b7984e61d3f4224, type: 3}
+  zrodloDzwieku: {fileID: -85576219752783262}
+  odglosStrzalu: {fileID: 8300000, guid: 5f9094830444074468fd771c5b13f010, type: 3}
 --- !u!114 &752293104528236178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,16 +369,16 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.32
+  m_Volume: 0.17
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 15
+  MaxDistance: 10
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -428,7 +428,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.0027777778
       inSlope: 0
       outSlope: 0
       tangentMode: 0
